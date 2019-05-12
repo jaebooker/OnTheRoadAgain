@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="381" y="142"/>
         </scene>
-        <!--View Controller-->
+        <!--Way Points View Controller-->
         <scene sceneID="3si-oD-nes">
             <objects>
-                <viewController id="VF7-h7-QZs" sceneMemberID="viewController">
+                <viewController id="VF7-h7-QZs" customClass="WayPointsViewController" customModule="OnTheRoadAgain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ie-mo-ZFA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-sp-kS1">
                                 <rect key="frame" x="40" y="320" width="334" height="30"/>
                                 <state key="normal" title="Add Some Choice Waypoints!"/>
+                                <connections>
+                                    <action selector="wayPointButton:" destination="VF7-h7-QZs" eventType="touchUpInside" id="m9h-QI-pKe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
