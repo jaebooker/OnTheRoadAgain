@@ -26,6 +26,12 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oz6-Rl-bg2" id="1vu-ml-13i">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cable-beach-broome-australia" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-iQ-gPN">
+                                            <rect key="frame" x="0.0" y="-1" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -63,21 +69,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amsterdam-colors" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-ca-qm4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are the waypoints gone?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhJ-uJ-iEW">
-                                <rect key="frame" x="20" y="148" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="148" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-sp-kS1">
-                                <rect key="frame" x="40" y="320" width="334" height="30"/>
-                                <state key="normal" title="Add Some Choice Waypoints!"/>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-sp-kS1">
+                                <rect key="frame" x="40" y="325.5" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <color key="tintColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add Some Waypoints!"/>
                                 <connections>
                                     <action selector="wayPointButton:" destination="VF7-h7-QZs" eventType="touchUpInside" id="m9h-QI-pKe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-Ie-t0b">
-                                <rect key="frame" x="40" y="772" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-Ie-t0b">
+                                <rect key="frame" x="40" y="768" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <color key="tintColor" red="0.92549020049999997" green="0.2407452856" blue="0.24797359790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Remove Trip">
                                     <color key="titleColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -89,9 +102,11 @@
                         <color key="backgroundColor" red="0.81336212158203125" green="0.79532438516616821" blue="0.79089647531509399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oGz-Ie-t0b" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="3br-v7-ypr"/>
+                            <constraint firstItem="nGS-ca-qm4" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" id="5Qr-59-JTb"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="FhJ-uJ-iEW" secondAttribute="trailing" constant="20" id="8c8-cG-dmr"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="bottom" secondItem="oGz-Ie-t0b" secondAttribute="bottom" constant="60" id="EjJ-O7-ge1"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="top" secondItem="FhJ-uJ-iEW" secondAttribute="bottom" constant="151" id="FJb-E1-9Dc"/>
+                            <constraint firstItem="nGS-ca-qm4" firstAttribute="top" secondItem="juW-V1-DYU" secondAttribute="top" id="GBw-ho-GmC"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="GNy-K3-B4N"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="20" id="Mpb-bh-Gns"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="U4r-oj-bDA"/>
@@ -100,6 +115,8 @@
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="lTG-eg-9we"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="oGz-Ie-t0b" secondAttribute="trailing" constant="40" id="lp7-Ah-hdk"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="top" secondItem="juW-V1-DYU" secondAttribute="top" constant="60" id="pET-lV-7RC"/>
+                            <constraint firstAttribute="bottom" secondItem="nGS-ca-qm4" secondAttribute="bottom" id="q2U-wv-PBD"/>
+                            <constraint firstItem="nGS-ca-qm4" firstAttribute="trailing" secondItem="juW-V1-DYU" secondAttribute="trailing" id="sxZ-3f-n85"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="juW-V1-DYU"/>
                     </view>
@@ -109,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roR-FQ-T6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="857"/>
+            <point key="canvasLocation" x="379.71014492753625" y="856.47321428571422"/>
         </scene>
         <!--Add Trip View Controller-->
         <scene sceneID="xWa-6n-Aq5">
@@ -134,7 +151,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-oQ-Xcy">
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-oQ-Xcy">
                                 <rect key="frame" x="40" y="256.5" width="334" height="38"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="tintColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
@@ -193,5 +210,7 @@
     </scenes>
     <resources>
         <image name="Abraham-Lake" width="1920" height="900"/>
+        <image name="amsterdam-colors" width="868" height="579"/>
+        <image name="cable-beach-broome-australia" width="868" height="579"/>
     </resources>
 </document>

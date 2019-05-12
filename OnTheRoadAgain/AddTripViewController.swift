@@ -19,6 +19,7 @@ class AddTripViewController: UIViewController {
             tripController.tableView.reloadData()
             navigationController?.popViewController(animated: true)
         }
+//        let newTrip = TripItem(entity: <#T##NSEntityDescription#>, insertInto: <#T##NSManagedObjectContext?#>)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

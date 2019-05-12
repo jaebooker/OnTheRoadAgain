@@ -50,7 +50,8 @@ class TripTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         var trips = tripArray[indexPath.row]
         cell.textLabel?.text = trips.name
-
+        var white = UIColor(displayP3Red: 999, green: 999, blue: 999, alpha: 1)
+        cell.textLabel?.textColor = white
         return cell
     }
     
