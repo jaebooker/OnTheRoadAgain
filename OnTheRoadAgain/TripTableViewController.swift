@@ -46,8 +46,9 @@ class TripTableViewController: UITableViewController {
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let addTripVC = segue.destination as! AddTripViewController
-        addTripVC.tripController = self
+        if let addTripVC = segue.destination as? AddTripViewController {
+            addTripVC.tripController = self
+        }
     }
     /*
     // Override to support conditional editing of the table view.

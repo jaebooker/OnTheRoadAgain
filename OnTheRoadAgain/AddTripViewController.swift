@@ -15,10 +15,10 @@ class AddTripViewController: UIViewController {
         let trip = Trip()
         if tripTextField.text != nil {
             trip.name = tripTextField.text!
+            tripController.tripArray.append(trip)
+            tripController.tableView.reloadData()
+            navigationController?.popViewController(animated: true)
         }
-        tripController.tripArray.append(trip)
-        tripController.tableView.reloadData()
-        navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
