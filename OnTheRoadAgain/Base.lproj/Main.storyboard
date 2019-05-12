@@ -46,10 +46,50 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="VF7-h7-QZs" kind="show" id="TSV-Cr-02y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-AX-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3si-oD-nes">
+            <objects>
+                <viewController id="VF7-h7-QZs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ie-mo-ZFA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are the waypoints gone?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhJ-uJ-iEW">
+                                <rect key="frame" x="20" y="148" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-sp-kS1">
+                                <rect key="frame" x="40" y="320" width="334" height="30"/>
+                                <state key="normal" title="Add Some Choice Waypoints!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="FhJ-uJ-iEW" secondAttribute="trailing" constant="20" id="8c8-cG-dmr"/>
+                            <constraint firstItem="x5Q-sp-kS1" firstAttribute="top" secondItem="FhJ-uJ-iEW" secondAttribute="bottom" constant="151" id="FJb-E1-9Dc"/>
+                            <constraint firstItem="x5Q-sp-kS1" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="GNy-K3-B4N"/>
+                            <constraint firstItem="FhJ-uJ-iEW" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="20" id="Mpb-bh-Gns"/>
+                            <constraint firstItem="x5Q-sp-kS1" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="U4r-oj-bDA"/>
+                            <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="x5Q-sp-kS1" secondAttribute="trailing" constant="40" id="Uv6-KL-iAo"/>
+                            <constraint firstItem="FhJ-uJ-iEW" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="lTG-eg-9we"/>
+                            <constraint firstItem="FhJ-uJ-iEW" firstAttribute="top" secondItem="juW-V1-DYU" secondAttribute="top" constant="60" id="pET-lV-7RC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="juW-V1-DYU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roR-FQ-T6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="857"/>
         </scene>
         <!--Add Trip View Controller-->
         <scene sceneID="xWa-6n-Aq5">
