@@ -15,10 +15,15 @@ class WayPointsViewController: UIViewController {
     @IBAction func wayPointButton(_ sender: Any) {
     }
     @IBAction func removeTripButton(_ sender: Any) {
+        var index = 0
         for tripSelected in tripController.tripArray {
             if tripSelected.name == selectedTrip.name {
-                print("found")
+                tripController.tripArray.remove(at: index)
+                tripController.tableView.reloadData()
+                navigationController?.popViewController(animated: true)
+                break
             }
+            index += 1
         }
     }
     override func viewDidLoad() {
