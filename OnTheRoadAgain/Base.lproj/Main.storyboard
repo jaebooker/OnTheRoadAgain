@@ -75,16 +75,29 @@
                                     <action selector="wayPointButton:" destination="VF7-h7-QZs" eventType="touchUpInside" id="m9h-QI-pKe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-Ie-t0b">
+                                <rect key="frame" x="40" y="772" width="334" height="30"/>
+                                <state key="normal" title="Remove Trip">
+                                    <color key="titleColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeTripButton:" destination="VF7-h7-QZs" eventType="touchUpInside" id="PWP-v9-lCd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oGz-Ie-t0b" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="3br-v7-ypr"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="FhJ-uJ-iEW" secondAttribute="trailing" constant="20" id="8c8-cG-dmr"/>
+                            <constraint firstItem="juW-V1-DYU" firstAttribute="bottom" secondItem="oGz-Ie-t0b" secondAttribute="bottom" constant="60" id="EjJ-O7-ge1"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="top" secondItem="FhJ-uJ-iEW" secondAttribute="bottom" constant="151" id="FJb-E1-9Dc"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="GNy-K3-B4N"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="20" id="Mpb-bh-Gns"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="U4r-oj-bDA"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="x5Q-sp-kS1" secondAttribute="trailing" constant="40" id="Uv6-KL-iAo"/>
+                            <constraint firstItem="oGz-Ie-t0b" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="b5j-t2-Inp"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="lTG-eg-9we"/>
+                            <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="oGz-Ie-t0b" secondAttribute="trailing" constant="40" id="lp7-Ah-hdk"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="top" secondItem="juW-V1-DYU" secondAttribute="top" constant="60" id="pET-lV-7RC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="juW-V1-DYU"/>

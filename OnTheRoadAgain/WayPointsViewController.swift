@@ -14,6 +14,13 @@ class WayPointsViewController: UIViewController {
     @IBOutlet weak var wayPointLabel: UILabel!
     @IBAction func wayPointButton(_ sender: Any) {
     }
+    @IBAction func removeTripButton(_ sender: Any) {
+        for tripSelected in tripController.tripArray {
+            if tripSelected.name == selectedTrip.name {
+                print("found")
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         wayPointLabel.text = selectedTrip.name
