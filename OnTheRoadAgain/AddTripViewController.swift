@@ -9,16 +9,21 @@
 import UIKit
 
 class AddTripViewController: UIViewController {
-
+    var tripController = TripTableViewController()
     @IBOutlet weak var tripTextField: UITextField!
     @IBAction func addTripButton(_ sender: Any) {
+        let trip = Trip()
+        if tripTextField.text != nil {
+            trip.name = tripTextField.text!
+        }
+        tripController.tripArray.append(trip)
+        tripController.tableView.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
