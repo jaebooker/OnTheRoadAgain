@@ -59,16 +59,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you going?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeD-r9-N27">
-                                <rect key="frame" x="123.5" y="152" width="167" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you going?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeD-r9-N27">
+                                <rect key="frame" x="20" y="152" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-hZ-8fs">
+                                <rect key="frame" x="20" y="193" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="HeD-r9-N27" secondAttribute="trailing" constant="20" id="9mm-aD-SH7"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="top" secondItem="477-Ec-fX2" secondAttribute="top" constant="64" id="O2z-f8-Ext"/>
+                            <constraint firstItem="a1R-hZ-8fs" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="20" id="UI7-ib-71d"/>
+                            <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="a1R-hZ-8fs" secondAttribute="trailing" constant="20" id="ULJ-z0-sBW"/>
+                            <constraint firstItem="HeD-r9-N27" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="20" id="efQ-9Y-FnS"/>
+                            <constraint firstItem="a1R-hZ-8fs" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="kAg-Ap-G2c"/>
+                            <constraint firstItem="a1R-hZ-8fs" firstAttribute="top" secondItem="HeD-r9-N27" secondAttribute="bottom" constant="20" id="sWF-xu-A8c"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="yGA-kz-gwt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="477-Ec-fX2"/>
