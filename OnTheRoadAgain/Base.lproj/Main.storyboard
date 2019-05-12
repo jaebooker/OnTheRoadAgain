@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="oz6-Rl-bg2">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -85,7 +86,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.81336212158203125" green="0.79532438516616821" blue="0.79089647531509399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oGz-Ie-t0b" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="3br-v7-ypr"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="FhJ-uJ-iEW" secondAttribute="trailing" constant="20" id="8c8-cG-dmr"/>
@@ -118,27 +119,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Abraham-Lake" translatesAutoresizingMaskIntoConstraints="NO" id="vrW-PR-edb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you going?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeD-r9-N27">
-                                <rect key="frame" x="20" y="152" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="152" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.96070497939999999" green="1" blue="0.2347243544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-hZ-8fs">
-                                <rect key="frame" x="20" y="193" width="374" height="30"/>
+                                <rect key="frame" x="20" y="198.5" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-oQ-Xcy">
-                                <rect key="frame" x="40" y="251" width="334" height="30"/>
-                                <state key="normal" title="Start Your Journey!"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-oQ-Xcy">
+                                <rect key="frame" x="40" y="256.5" width="334" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="tintColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Start Your Journey!">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addTripButton:" destination="eIV-1Z-14h" eventType="touchUpInside" id="Y4Y-KS-fZ6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="HeD-r9-N27" secondAttribute="trailing" constant="20" id="9mm-aD-SH7"/>
                             <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="yJC-oQ-Xcy" secondAttribute="trailing" constant="40" id="H9g-xx-r1x"/>
@@ -146,11 +153,15 @@
                             <constraint firstItem="yJC-oQ-Xcy" firstAttribute="top" secondItem="a1R-hZ-8fs" secondAttribute="bottom" constant="28" id="RgP-qW-Fs2"/>
                             <constraint firstItem="a1R-hZ-8fs" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="20" id="UI7-ib-71d"/>
                             <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="a1R-hZ-8fs" secondAttribute="trailing" constant="20" id="ULJ-z0-sBW"/>
+                            <constraint firstAttribute="bottom" secondItem="vrW-PR-edb" secondAttribute="bottom" id="Wvt-pn-ZxA"/>
+                            <constraint firstItem="vrW-PR-edb" firstAttribute="trailing" secondItem="477-Ec-fX2" secondAttribute="trailing" id="Z2b-DK-q58"/>
                             <constraint firstItem="yJC-oQ-Xcy" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="40" id="bgI-PG-mhM"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="20" id="efQ-9Y-FnS"/>
+                            <constraint firstItem="vrW-PR-edb" firstAttribute="top" secondItem="477-Ec-fX2" secondAttribute="top" id="eja-Hs-oLr"/>
                             <constraint firstItem="a1R-hZ-8fs" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="kAg-Ap-G2c"/>
                             <constraint firstItem="a1R-hZ-8fs" firstAttribute="top" secondItem="HeD-r9-N27" secondAttribute="bottom" constant="20" id="sWF-xu-A8c"/>
                             <constraint firstItem="yJC-oQ-Xcy" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="uHp-O5-ENM"/>
+                            <constraint firstItem="vrW-PR-edb" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" id="xPR-eu-VwS"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="yGA-kz-gwt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="477-Ec-fX2"/>
@@ -161,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-or-1Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1172" y="165"/>
+            <point key="canvasLocation" x="1171.0144927536232" y="164.73214285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ic0-Co-cfu">
@@ -180,4 +191,7 @@
             <point key="canvasLocation" x="-538" y="142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Abraham-Lake" width="1920" height="900"/>
+    </resources>
 </document>

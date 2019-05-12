@@ -19,6 +19,11 @@
 		0D1F16E622881A3200B36086 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E522881A3200B36086 /* AddTripViewController.swift */; };
 		0D1F16E8228825B100B36086 /* WayPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E7228825B100B36086 /* WayPointsViewController.swift */; };
 		0D5961E92288CAEF0001FE3F /* sendMeOnMyWay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961E82288CAEF0001FE3F /* sendMeOnMyWay.mp3 */; };
+		0D5961EB2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961EA2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg */; };
+		0D5961ED2288CF690001FE3F /* Abraham-Lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961EC2288CF690001FE3F /* Abraham-Lake.jpg */; };
+		0D5961EF2288CF6D0001FE3F /* amsterdam-colors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */; };
+		0D5961F12288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */; };
+		0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		0D1F16E522881A3200B36086 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		0D1F16E7228825B100B36086 /* WayPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPointsViewController.swift; sourceTree = "<group>"; };
 		0D5961E82288CAEF0001FE3F /* sendMeOnMyWay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sendMeOnMyWay.mp3; sourceTree = SOURCE_ROOT; };
+		0D5961EA2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-Amazing-Travel-Hacks.jpg"; sourceTree = SOURCE_ROOT; };
+		0D5961EC2288CF690001FE3F /* Abraham-Lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abraham-Lake.jpg"; sourceTree = SOURCE_ROOT; };
+		0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amsterdam-colors.jpg"; sourceTree = SOURCE_ROOT; };
+		0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "best-travel-instagrams-to-follow-2016-max-muench-6.jpg"; sourceTree = SOURCE_ROOT; };
+		0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cable-beach-broome-australia.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,11 @@
 		0D1F16AF2287FD4300B36086 /* OnTheRoadAgain */ = {
 			isa = PBXGroup;
 			children = (
+				0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */,
+				0D5961EC2288CF690001FE3F /* Abraham-Lake.jpg */,
+				0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */,
+				0D5961EA2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg */,
+				0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */,
 				0D5961E82288CAEF0001FE3F /* sendMeOnMyWay.mp3 */,
 				0D1F16B02287FD4300B36086 /* AppDelegate.swift */,
 				0D1F16B42287FD4300B36086 /* Main.storyboard */,
@@ -245,9 +260,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D1F16BE2287FD4700B36086 /* LaunchScreen.storyboard in Resources */,
+				0D5961EF2288CF6D0001FE3F /* amsterdam-colors.jpg in Resources */,
 				0D1F16BB2287FD4700B36086 /* Assets.xcassets in Resources */,
 				0D1F16B62287FD4300B36086 /* Main.storyboard in Resources */,
+				0D5961ED2288CF690001FE3F /* Abraham-Lake.jpg in Resources */,
+				0D5961F12288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg in Resources */,
 				0D5961E92288CAEF0001FE3F /* sendMeOnMyWay.mp3 in Resources */,
+				0D5961EB2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg in Resources */,
+				0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
