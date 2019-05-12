@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,6 +40,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <segue destination="eIV-1Z-14h" kind="show" id="vQU-Ae-Lt0"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -46,6 +50,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-AX-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xWa-6n-Aq5">
+            <objects>
+                <viewController id="eIV-1Z-14h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVx-76-c3d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="477-Ec-fX2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-or-1Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="165"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ic0-Co-cfu">

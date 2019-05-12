@@ -23,7 +23,7 @@ class TripTableViewController: UITableViewController {
         var cocomo = Trip()
         cocomo.name = "Brumuda, Jamaca"
         var floridaKeys = Trip()
-        floridaKeys.name = "There's a place called Kocomo"
+        floridaKeys.name = "Oooh, I wanna take ya!"
         return [cocomo, floridaKeys]
     }
     // MARK: - Table view data source
