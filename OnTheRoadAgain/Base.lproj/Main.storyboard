@@ -12,7 +12,7 @@
         <!--On The Road Again-->
         <scene sceneID="mLF-WG-MGm">
             <objects>
-                <tableViewController id="Z32-zc-f2g" sceneMemberID="viewController">
+                <tableViewController id="Z32-zc-f2g" customClass="TripTableViewController" customModule="OnTheRoadAgain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="31s-PK-dly">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,8 +34,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="On The Road Again" id="nSC-KG-ah5">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="5hc-ep-Zgq">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mtj-uh-hOc">
-                                <rect key="frame" x="-23" y="-15" width="92" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mtj-uh-hOc">
+                                <rect key="frame" x="302" y="0.0" width="92" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="+"/>
