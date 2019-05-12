@@ -15,6 +15,7 @@
 		0D1F16C92287FD4700B36086 /* OnTheRoadAgainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16C82287FD4700B36086 /* OnTheRoadAgainTests.swift */; };
 		0D1F16D42287FD4700B36086 /* OnTheRoadAgainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16D32287FD4700B36086 /* OnTheRoadAgainUITests.swift */; };
 		0D1F16E2228803F000B36086 /* TripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E1228803F000B36086 /* TripTableViewController.swift */; };
+		0D1F16E42288066200B36086 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E32288066200B36086 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0D1F16D32287FD4700B36086 /* OnTheRoadAgainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheRoadAgainUITests.swift; sourceTree = "<group>"; };
 		0D1F16D52287FD4700B36086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D1F16E1228803F000B36086 /* TripTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewController.swift; sourceTree = "<group>"; };
+		0D1F16E32288066200B36086 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0D1F16BF2287FD4700B36086 /* Info.plist */,
 				0D1F16B72287FD4300B36086 /* OnTheRoadAgain.xcdatamodeld */,
 				0D1F16E1228803F000B36086 /* TripTableViewController.swift */,
+				0D1F16E32288066200B36086 /* Trip.swift */,
 			);
 			path = OnTheRoadAgain;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1F16E42288066200B36086 /* Trip.swift in Sources */,
 				0D1F16B92287FD4300B36086 /* OnTheRoadAgain.xcdatamodeld in Sources */,
 				0D1F16B12287FD4300B36086 /* AppDelegate.swift in Sources */,
 				0D1F16E2228803F000B36086 /* TripTableViewController.swift in Sources */,
