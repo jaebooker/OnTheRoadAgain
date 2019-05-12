@@ -10,6 +10,9 @@ import UIKit
 
 class AddTripViewController: UIViewController {
 
+    @IBOutlet weak var tripTextField: UITextField!
+    @IBAction func addTripButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

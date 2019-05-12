@@ -74,6 +74,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-oQ-Xcy">
                                 <rect key="frame" x="40" y="251" width="334" height="30"/>
                                 <state key="normal" title="Start Your Journey!"/>
+                                <connections>
+                                    <action selector="addTripButton:" destination="eIV-1Z-14h" eventType="touchUpInside" id="Y4Y-KS-fZ6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,6 +96,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="477-Ec-fX2"/>
                     </view>
+                    <connections>
+                        <outlet property="tripTextField" destination="a1R-hZ-8fs" id="hc2-zj-fIz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-or-1Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
