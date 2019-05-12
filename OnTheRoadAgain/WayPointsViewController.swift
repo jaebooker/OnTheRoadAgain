@@ -10,6 +10,7 @@ import UIKit
 
 class WayPointsViewController: UIViewController {
 
+    @IBOutlet weak var wayPointLabel: UILabel!
     @IBAction func wayPointButton(_ sender: Any) {
     }
     override func viewDidLoad() {
