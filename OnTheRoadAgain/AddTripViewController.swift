@@ -18,6 +18,7 @@ class AddTripViewController: UIViewController {
         }
         tripController.tripArray.append(trip)
         tripController.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
