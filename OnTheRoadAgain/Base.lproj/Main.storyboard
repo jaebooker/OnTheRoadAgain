@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="381" y="142"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Trip View Controller-->
         <scene sceneID="xWa-6n-Aq5">
             <objects>
-                <viewController id="eIV-1Z-14h" sceneMemberID="viewController">
+                <viewController id="eIV-1Z-14h" customClass="AddTripViewController" customModule="OnTheRoadAgain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TVx-76-c3d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,16 +71,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-oQ-Xcy">
+                                <rect key="frame" x="40" y="251" width="334" height="30"/>
+                                <state key="normal" title="Start Your Journey!"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="HeD-r9-N27" secondAttribute="trailing" constant="20" id="9mm-aD-SH7"/>
+                            <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="yJC-oQ-Xcy" secondAttribute="trailing" constant="40" id="H9g-xx-r1x"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="top" secondItem="477-Ec-fX2" secondAttribute="top" constant="64" id="O2z-f8-Ext"/>
+                            <constraint firstItem="yJC-oQ-Xcy" firstAttribute="top" secondItem="a1R-hZ-8fs" secondAttribute="bottom" constant="28" id="RgP-qW-Fs2"/>
                             <constraint firstItem="a1R-hZ-8fs" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="20" id="UI7-ib-71d"/>
                             <constraint firstItem="477-Ec-fX2" firstAttribute="trailing" secondItem="a1R-hZ-8fs" secondAttribute="trailing" constant="20" id="ULJ-z0-sBW"/>
+                            <constraint firstItem="yJC-oQ-Xcy" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="40" id="bgI-PG-mhM"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="leading" secondItem="477-Ec-fX2" secondAttribute="leading" constant="20" id="efQ-9Y-FnS"/>
                             <constraint firstItem="a1R-hZ-8fs" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="kAg-Ap-G2c"/>
                             <constraint firstItem="a1R-hZ-8fs" firstAttribute="top" secondItem="HeD-r9-N27" secondAttribute="bottom" constant="20" id="sWF-xu-A8c"/>
+                            <constraint firstItem="yJC-oQ-Xcy" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="uHp-O5-ENM"/>
                             <constraint firstItem="HeD-r9-N27" firstAttribute="centerX" secondItem="TVx-76-c3d" secondAttribute="centerX" id="yGA-kz-gwt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="477-Ec-fX2"/>
