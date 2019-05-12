@@ -18,6 +18,7 @@
 		0D1F16E42288066200B36086 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E32288066200B36086 /* Trip.swift */; };
 		0D1F16E622881A3200B36086 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E522881A3200B36086 /* AddTripViewController.swift */; };
 		0D1F16E8228825B100B36086 /* WayPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F16E7228825B100B36086 /* WayPointsViewController.swift */; };
+		0D5961E92288CAEF0001FE3F /* sendMeOnMyWay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961E82288CAEF0001FE3F /* sendMeOnMyWay.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0D1F16E32288066200B36086 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		0D1F16E522881A3200B36086 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		0D1F16E7228825B100B36086 /* WayPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPointsViewController.swift; sourceTree = "<group>"; };
+		0D5961E82288CAEF0001FE3F /* sendMeOnMyWay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sendMeOnMyWay.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		0D1F16AF2287FD4300B36086 /* OnTheRoadAgain */ = {
 			isa = PBXGroup;
 			children = (
+				0D5961E82288CAEF0001FE3F /* sendMeOnMyWay.mp3 */,
 				0D1F16B02287FD4300B36086 /* AppDelegate.swift */,
 				0D1F16B42287FD4300B36086 /* Main.storyboard */,
 				0D1F16BA2287FD4700B36086 /* Assets.xcassets */,
@@ -244,6 +247,7 @@
 				0D1F16BE2287FD4700B36086 /* LaunchScreen.storyboard in Resources */,
 				0D1F16BB2287FD4700B36086 /* Assets.xcassets in Resources */,
 				0D1F16B62287FD4300B36086 /* Main.storyboard in Resources */,
+				0D5961E92288CAEF0001FE3F /* sendMeOnMyWay.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

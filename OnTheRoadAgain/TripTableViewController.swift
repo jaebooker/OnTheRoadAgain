@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import AVFoundation
 class TripTableViewController: UITableViewController {
     var tripArray: [Trip] = []
+    var tripMusicPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         tripArray = testTripCreation()
+        let tripMusic = Bundle.main.path(forResource: "sendMeOnMyWay", ofType: "mp3")
+        do {
+            tripMusicPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: tripMusic!))
+        } catch {
+            print(error)
+        }
+        tripMusicPlayer.play()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
