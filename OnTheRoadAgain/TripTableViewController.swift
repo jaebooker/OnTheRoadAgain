@@ -40,8 +40,8 @@ class TripTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        cell.textLabel?.text = "Here we go"
+        var trips = tripArray[indexPath.row]
+        cell.textLabel?.text = trips.name
 
         return cell
     }
