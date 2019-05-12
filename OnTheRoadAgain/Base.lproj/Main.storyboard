@@ -47,7 +47,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="VF7-h7-QZs" kind="show" id="TSV-Cr-02y"/>
+                        <segue destination="VF7-h7-QZs" kind="show" identifier="ViewTripSegue" id="TSV-Cr-02y"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-AX-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>

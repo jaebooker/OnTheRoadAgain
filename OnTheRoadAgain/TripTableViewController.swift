@@ -45,9 +45,22 @@ class TripTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var trips = tripArray[indexPath.row]
+        performSegue(withIdentifier: "ViewTripSegue", sender: trips)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addTripVC = segue.destination as? AddTripViewController {
             addTripVC.tripController = self
+        }
+        if let viewTripVC = segue.destination as? WayPointsViewController {
+            
+            if let tripSelected = sender as? Trip {
+                viewTripVC.tripController = self
+                viewTripVC.selectedTrip = tripSelected
+            }
         }
     }
     /*
