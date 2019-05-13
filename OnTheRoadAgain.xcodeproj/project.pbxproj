@@ -24,6 +24,7 @@
 		0D5961EF2288CF6D0001FE3F /* amsterdam-colors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */; };
 		0D5961F12288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */; };
 		0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */; };
+		0D5961F522890DA80001FE3F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5961F422890DA80001FE3F /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amsterdam-colors.jpg"; sourceTree = SOURCE_ROOT; };
 		0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "best-travel-instagrams-to-follow-2016-max-muench-6.jpg"; sourceTree = SOURCE_ROOT; };
 		0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cable-beach-broome-australia.jpg"; sourceTree = SOURCE_ROOT; };
+		0D5961F422890DA80001FE3F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				0D1F16E32288066200B36086 /* Trip.swift */,
 				0D1F16E522881A3200B36086 /* AddTripViewController.swift */,
 				0D1F16E7228825B100B36086 /* WayPointsViewController.swift */,
+				0D5961F422890DA80001FE3F /* MapViewController.swift */,
 			);
 			path = OnTheRoadAgain;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				0D1F16B12287FD4300B36086 /* AppDelegate.swift in Sources */,
 				0D1F16E2228803F000B36086 /* TripTableViewController.swift in Sources */,
 				0D1F16E8228825B100B36086 /* WayPointsViewController.swift in Sources */,
+				0D5961F522890DA80001FE3F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

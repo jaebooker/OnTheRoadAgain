@@ -85,6 +85,7 @@
                                 <state key="normal" title="Add Some Waypoints!"/>
                                 <connections>
                                     <action selector="wayPointButton:" destination="VF7-h7-QZs" eventType="touchUpInside" id="m9h-QI-pKe"/>
+                                    <segue destination="JmE-rY-f6Y" kind="show" id="BU5-Vt-PS7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-Ie-t0b">
@@ -127,6 +128,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roR-FQ-T6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="856.47321428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kpN-9v-Qfo">
+            <objects>
+                <viewController id="JmE-rY-f6Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xzz-mJ-Z8i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V3Z-vH-IZZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V3Z-vH-IZZ" firstAttribute="trailing" secondItem="gsO-2j-YsI" secondAttribute="trailing" id="7AZ-dm-h2X"/>
+                            <constraint firstItem="V3Z-vH-IZZ" firstAttribute="top" secondItem="gsO-2j-YsI" secondAttribute="top" id="ILz-pY-rRV"/>
+                            <constraint firstItem="V3Z-vH-IZZ" firstAttribute="leading" secondItem="gsO-2j-YsI" secondAttribute="leading" id="TPe-nG-byB"/>
+                            <constraint firstAttribute="bottom" secondItem="V3Z-vH-IZZ" secondAttribute="bottom" id="YdV-Ye-6mG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gsO-2j-YsI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhn-zt-jqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492.753623188406" y="868.52678571428567"/>
         </scene>
         <!--Add Trip View Controller-->
         <scene sceneID="xWa-6n-Aq5">
