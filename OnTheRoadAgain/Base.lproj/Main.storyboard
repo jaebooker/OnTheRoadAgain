@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="856.47321428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="kpN-9v-Qfo">
             <objects>
-                <viewController id="JmE-rY-f6Y" sceneMemberID="viewController">
+                <viewController id="JmE-rY-f6Y" customClass="MapViewController" customModule="OnTheRoadAgain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xzz-mJ-Z8i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +150,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gsO-2j-YsI"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="V3Z-vH-IZZ" id="IJB-yy-uRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhn-zt-jqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
