@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import AVFoundation
 class AddTripViewController: UIViewController {
     var tripController = TripTableViewController()
+    var addTripPlayer = AVAudioPlayer()
     @IBOutlet weak var tripTextField: UITextField!
     @IBAction func addTripButton(_ sender: Any) {
 //        let trip = Trip()
@@ -30,7 +31,13 @@ class AddTripViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        addTripPlayer.play()
+        let addTripSound = Bundle.main.path(forResource: "addTripSound", ofType: "mp3")
+        do {
+            addTripPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: addTripSound!))
+        } catch {
+            print(error)
+        }
         // Do any additional setup after loading the view.
     }
 

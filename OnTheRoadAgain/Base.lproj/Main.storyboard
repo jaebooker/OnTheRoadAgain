@@ -143,24 +143,13 @@
                                     <outlet property="delegate" destination="JmE-rY-f6Y" id="mjX-NA-2Tc"/>
                                 </connections>
                             </mapView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="htd-8A-gU0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="JmE-rY-f6Y" id="eCC-LK-LbX"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="V3Z-vH-IZZ" firstAttribute="trailing" secondItem="gsO-2j-YsI" secondAttribute="trailing" id="7AZ-dm-h2X"/>
-                            <constraint firstItem="htd-8A-gU0" firstAttribute="centerX" secondItem="Xzz-mJ-Z8i" secondAttribute="centerX" id="7vT-mM-0jC"/>
                             <constraint firstItem="V3Z-vH-IZZ" firstAttribute="top" secondItem="gsO-2j-YsI" secondAttribute="top" id="ILz-pY-rRV"/>
-                            <constraint firstItem="htd-8A-gU0" firstAttribute="top" secondItem="gsO-2j-YsI" secondAttribute="top" id="KiU-Cj-nbE"/>
-                            <constraint firstItem="htd-8A-gU0" firstAttribute="trailing" secondItem="gsO-2j-YsI" secondAttribute="trailing" id="OjC-5P-N8y"/>
                             <constraint firstItem="V3Z-vH-IZZ" firstAttribute="leading" secondItem="gsO-2j-YsI" secondAttribute="leading" id="TPe-nG-byB"/>
                             <constraint firstAttribute="bottom" secondItem="V3Z-vH-IZZ" secondAttribute="bottom" id="YdV-Ye-6mG"/>
-                            <constraint firstItem="htd-8A-gU0" firstAttribute="leading" secondItem="gsO-2j-YsI" secondAttribute="leading" id="ll7-az-NYX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gsO-2j-YsI"/>
                     </view>
@@ -173,7 +162,6 @@
                 <searchDisplayController id="dRx-Rx-z4o">
                     <connections>
                         <outlet property="delegate" destination="JmE-rY-f6Y" id="UTR-Ir-iMb"/>
-                        <outlet property="searchBar" destination="htd-8A-gU0" id="L4N-Ru-Uzo"/>
                         <outlet property="searchContentsController" destination="JmE-rY-f6Y" id="lVg-qd-N2R"/>
                         <outlet property="searchResultsDataSource" destination="JmE-rY-f6Y" id="W7V-Xc-dXo"/>
                         <outlet property="searchResultsDelegate" destination="JmE-rY-f6Y" id="j20-K2-tYR"/>

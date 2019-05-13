@@ -25,6 +25,7 @@
 		0D5961F12288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */; };
 		0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */; };
 		0D5961F522890DA80001FE3F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5961F422890DA80001FE3F /* MapViewController.swift */; };
+		0D5961F922893CF70001FE3F /* addTripSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F822893CF70001FE3F /* addTripSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "best-travel-instagrams-to-follow-2016-max-muench-6.jpg"; sourceTree = SOURCE_ROOT; };
 		0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cable-beach-broome-australia.jpg"; sourceTree = SOURCE_ROOT; };
 		0D5961F422890DA80001FE3F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0D5961F822893CF70001FE3F /* addTripSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = addTripSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		0D1F16AF2287FD4300B36086 /* OnTheRoadAgain */ = {
 			isa = PBXGroup;
 			children = (
+				0D5961F822893CF70001FE3F /* addTripSound.mp3 */,
 				0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */,
 				0D5961EC2288CF690001FE3F /* Abraham-Lake.jpg */,
 				0D5961F02288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg */,
@@ -264,6 +267,7 @@
 			files = (
 				0D1F16BE2287FD4700B36086 /* LaunchScreen.storyboard in Resources */,
 				0D5961EF2288CF6D0001FE3F /* amsterdam-colors.jpg in Resources */,
+				0D5961F922893CF70001FE3F /* addTripSound.mp3 in Resources */,
 				0D1F16BB2287FD4700B36086 /* Assets.xcassets in Resources */,
 				0D1F16B62287FD4300B36086 /* Main.storyboard in Resources */,
 				0D5961ED2288CF690001FE3F /* Abraham-Lake.jpg in Resources */,

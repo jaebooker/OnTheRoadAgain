@@ -18,7 +18,39 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         present(searchController, animated: true, completion: nil)
         // Do any additional setup after loading the view.
     }
-    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        UIApplication.shared.beginIgnoringInteractionEvents() //ignore other activity
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
+        
+        searchBar.resignFirstResponder() //hide it
+        dismiss(animated: true, completion: nil)
+        
+        let searchRequest = MKLocalSearch.Request() //create search request
+        searchRequest.naturalLanguageQuery = searchBar.text
+        
+        let activeSearch = MKLocalSearch(request: searchRequest)
+        activeSearch.start { (respone, error) in
+            activityIndicator.stopAnimating()
+            UIApplication.shared.endIgnoringInteractionEvents()
+            if respone == nil {
+                print("error")
+            } else {
+//                let annotations = self.mapView.annotations
+//                self.mapView.removeAnnotation(annotations as! MKAnnotation) //remove annotations
+                let latitude = respone?.boundingRegion.center.latitude //getting coordinates
+                let longitude = respone?.boundingRegion.center.longitude
+                let annotation = MKPointAnnotation()
+                annotation.title = searchBar.text
+                annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
+                self.mapView.addAnnotation(annotation) //add annotation to mapview
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
