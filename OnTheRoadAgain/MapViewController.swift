@@ -48,6 +48,10 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 annotation.title = searchBar.text
                 annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
                 self.mapView.addAnnotation(annotation) //add annotation to mapview
+                let coordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude!, longitude!)
+                let span = MKCoordinateSpan(latitudeDelta: 0.1,longitudeDelta: 0.1) //span of zoom
+                let region = MKCoordinateRegion(center: coordinate,span: span) //region for zoom
+                self.mapView.setRegion(region, animated: true) //set zoom in
             }
         }
     }
