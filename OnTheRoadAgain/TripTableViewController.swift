@@ -9,11 +9,11 @@
 import UIKit
 import AVFoundation
 class TripTableViewController: UITableViewController {
-    var tripArray: [Trip] = []
+    var tripArray: [TripItem] = []
     var tripMusicPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        tripArray = testTripCreation()
+        //tripArray = testTripCreation()
         let tripMusic = Bundle.main.path(forResource: "sendMeOnMyWay", ofType: "mp3")
         do {
             tripMusicPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: tripMusic!))
@@ -27,12 +27,23 @@ class TripTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func viewWillAppear(_ animated: Bool) {
+        getTripData()
+    }
     func testTripCreation() -> [Trip] {
         var cocomo = Trip()
         cocomo.name = "Brumuda, Jamaca"
         var floridaKeys = Trip()
         floridaKeys.name = "Oooh, I wanna take ya!"
         return [cocomo, floridaKeys]
+    }
+    func getTripData(){
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let tripItems = try? context.fetch(TripItem.fetchRequest()) as? [TripItem] {
+                tripArray = tripItems
+                tableView.reloadData()
+            }
+        }
     }
     // MARK: - Table view data source
 
@@ -51,7 +62,9 @@ class TripTableViewController: UITableViewController {
         var trips = tripArray[indexPath.row]
         cell.textLabel?.text = trips.name
         var white = UIColor(displayP3Red: 999, green: 999, blue: 999, alpha: 1)
+        var blue = UIColor(displayP3Red: 1, green: 1, blue: 999, alpha: 1)
         cell.textLabel?.textColor = white
+        cell.textLabel?.highlightedTextColor = blue
         return cell
     }
     

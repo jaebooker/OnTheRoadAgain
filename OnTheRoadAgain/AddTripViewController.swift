@@ -12,14 +12,21 @@ class AddTripViewController: UIViewController {
     var tripController = TripTableViewController()
     @IBOutlet weak var tripTextField: UITextField!
     @IBAction func addTripButton(_ sender: Any) {
-        let trip = Trip()
-        if tripTextField.text != nil {
-            trip.name = tripTextField.text!
-            tripController.tripArray.append(trip)
-            tripController.tableView.reloadData()
+//        let trip = Trip()
+//        if tripTextField.text != nil {
+//            trip.name = tripTextField.text!
+//            tripController.tripArray.append(trip)
+//            tripController.tableView.reloadData()
+//            navigationController?.popViewController(animated: true)
+//        }
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let newTrip = TripItem(entity: TripItem.entity(), insertInto: context)
+            if tripTextField.text != nil {
+                newTrip.name = tripTextField.text!
+            }
+            try? context.save()
             navigationController?.popViewController(animated: true)
         }
-//        let newTrip = TripItem(entity: <#T##NSEntityDescription#>, insertInto: <#T##NSManagedObjectContext?#>)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
