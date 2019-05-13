@@ -79,7 +79,7 @@ class TripTableViewController: UITableViewController {
         }
         if let viewTripVC = segue.destination as? WayPointsViewController {
             
-            if let tripSelected = sender as? Trip {
+            if let tripSelected = sender as? TripItem {
                 viewTripVC.tripController = self
                 viewTripVC.selectedTrip = tripSelected
             }
