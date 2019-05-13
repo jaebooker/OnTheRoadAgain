@@ -31,10 +31,10 @@ class AddTripViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        addTripPlayer.play()
         let addTripSound = Bundle.main.path(forResource: "addTripSound", ofType: "mp3")
         do {
             addTripPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: addTripSound!))
+            addTripPlayer.play()
         } catch {
             print(error)
         }
