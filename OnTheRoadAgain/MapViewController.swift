@@ -8,12 +8,14 @@
 
 import UIKit
 import MapKit
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
+        present(searchController, animated: true, completion: nil)
         // Do any additional setup after loading the view.
     }
     
