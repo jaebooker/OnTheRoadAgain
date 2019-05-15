@@ -14,6 +14,7 @@ class WaypointTableViewController: UITableViewController {
     var waypointArray: [WaypointItem] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        getWaypointData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -21,7 +22,7 @@ class WaypointTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewWillAppear(_ animated: Bool) {
-        getWaypointData()
+//        getWaypointData()
     }
     // MARK: - Table view data source
 
