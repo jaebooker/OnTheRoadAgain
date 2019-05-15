@@ -36,14 +36,18 @@ class WaypointTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "waypointCell", for: indexPath)
-        var waypoints = waypointArray[indexPath.row]
+        let waypoints = waypointArray[indexPath.row]
         cell.textLabel?.text = waypoints.title
         return cell
     }
     func getWaypointData(){
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             if let waypointItems = try? context.fetch(WaypointItem.fetchRequest()) as? [WaypointItem] {
-                waypointArray = waypointItems
+                for i in waypointItems {
+                    if i.name == selectedTrip?.name {
+                        waypointArray.append(i)
+                    }
+                }
                 tableView.reloadData()
             }
         }
