@@ -11,7 +11,7 @@ import MapKit
 import AVFoundation
 class MapViewController: UIViewController, UISearchBarDelegate {
     
-    var wayPoint: Waypoint? = nil
+    var wayPoint: Waypoint = Waypoint()
     
     @IBOutlet weak var addWaypointLabel: UIButton!
     
@@ -69,12 +69,10 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 let region = MKCoordinateRegion(center: coordinate,span: span) //region for zoom
                 self.mapView.setRegion(region, animated: true) //set zoom in
                 if (latitude != nil) && (longitude != nil) && (annotation.title != nil) {
-                    self.wayPoint?.lat = latitude!
-                    self.wayPoint?.long = longitude!
-                    self.wayPoint?.title = annotation.title!
-                    print("success!")
+                    self.wayPoint.lat = latitude!
+                    self.wayPoint.long = longitude!
+                    self.wayPoint.title = annotation.title!
                 }
-                print(self.wayPoint?.lat)
                 self.addWaypointLabel.isHidden = false //make button visible
             }
         }
