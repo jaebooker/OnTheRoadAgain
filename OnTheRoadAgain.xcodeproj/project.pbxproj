@@ -29,6 +29,16 @@
 		0D5961FB228946310001FE3F /* airplaneDing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961FA228946310001FE3F /* airplaneDing.mp3 */; };
 		0D5961FD2289463E0001FE3F /* openMap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961FC2289463E0001FE3F /* openMap.mp3 */; };
 		0D5961FF228BB4F80001FE3F /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5961FE228BB4F80001FE3F /* Waypoint.swift */; };
+		0D596201228BC8BA0001FE3F /* maps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596200228BC8BA0001FE3F /* maps.jpg */; };
+		0D596203228BC8C50001FE3F /* 8-Amazing-Travel-Hacks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596202228BC8C50001FE3F /* 8-Amazing-Travel-Hacks.jpg */; };
+		0D596205228BC8D20001FE3F /* 2plane2travel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596204228BC8D20001FE3F /* 2plane2travel.jpg */; };
+		0D596207228BC8DA0001FE3F /* travell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596206228BC8DA0001FE3F /* travell.jpg */; };
+		0D596209228BC8E10001FE3F /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596208228BC8E00001FE3F /* plane.jpg */; };
+		0D59620B228BCB410001FE3F /* planel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D59620A228BCB410001FE3F /* planel.jpg */; };
+		0D59620D228BCB4E0001FE3F /* planessss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D59620C228BCB4E0001FE3F /* planessss.jpg */; };
+		0D59620F228BCB580001FE3F /* planess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D59620E228BCB580001FE3F /* planess.jpg */; };
+		0D596211228BCB5E0001FE3F /* imagess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596210228BCB5E0001FE3F /* imagess.jpg */; };
+		0D596213228BCD260001FE3F /* WaypointTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D596212228BCD260001FE3F /* WaypointTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +87,16 @@
 		0D5961FA228946310001FE3F /* airplaneDing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airplaneDing.mp3; sourceTree = SOURCE_ROOT; };
 		0D5961FC2289463E0001FE3F /* openMap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openMap.mp3; sourceTree = SOURCE_ROOT; };
 		0D5961FE228BB4F80001FE3F /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		0D596200228BC8BA0001FE3F /* maps.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maps.jpg; sourceTree = "<group>"; };
+		0D596202228BC8C50001FE3F /* 8-Amazing-Travel-Hacks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-Amazing-Travel-Hacks.jpg"; sourceTree = SOURCE_ROOT; };
+		0D596204228BC8D20001FE3F /* 2plane2travel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2plane2travel.jpg; sourceTree = SOURCE_ROOT; };
+		0D596206228BC8DA0001FE3F /* travell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = travell.jpg; sourceTree = SOURCE_ROOT; };
+		0D596208228BC8E00001FE3F /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = SOURCE_ROOT; };
+		0D59620A228BCB410001FE3F /* planel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planel.jpg; sourceTree = SOURCE_ROOT; };
+		0D59620C228BCB4E0001FE3F /* planessss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planessss.jpg; sourceTree = SOURCE_ROOT; };
+		0D59620E228BCB580001FE3F /* planess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planess.jpg; sourceTree = SOURCE_ROOT; };
+		0D596210228BCB5E0001FE3F /* imagess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imagess.jpg; sourceTree = SOURCE_ROOT; };
+		0D596212228BCD260001FE3F /* WaypointTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +147,15 @@
 		0D1F16AF2287FD4300B36086 /* OnTheRoadAgain */ = {
 			isa = PBXGroup;
 			children = (
+				0D596210228BCB5E0001FE3F /* imagess.jpg */,
+				0D59620E228BCB580001FE3F /* planess.jpg */,
+				0D59620C228BCB4E0001FE3F /* planessss.jpg */,
+				0D59620A228BCB410001FE3F /* planel.jpg */,
+				0D596208228BC8E00001FE3F /* plane.jpg */,
+				0D596206228BC8DA0001FE3F /* travell.jpg */,
+				0D596204228BC8D20001FE3F /* 2plane2travel.jpg */,
+				0D596202228BC8C50001FE3F /* 8-Amazing-Travel-Hacks.jpg */,
+				0D596200228BC8BA0001FE3F /* maps.jpg */,
 				0D5961FA228946310001FE3F /* airplaneDing.mp3 */,
 				0D5961FC2289463E0001FE3F /* openMap.mp3 */,
 				0D5961F822893CF70001FE3F /* addTripSound.mp3 */,
@@ -148,6 +177,7 @@
 				0D1F16E7228825B100B36086 /* WayPointsViewController.swift */,
 				0D5961F422890DA80001FE3F /* MapViewController.swift */,
 				0D5961FE228BB4F80001FE3F /* Waypoint.swift */,
+				0D596212228BCD260001FE3F /* WaypointTableViewController.swift */,
 			);
 			path = OnTheRoadAgain;
 			sourceTree = "<group>";
@@ -274,17 +304,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D596209228BC8E10001FE3F /* plane.jpg in Resources */,
 				0D1F16BE2287FD4700B36086 /* LaunchScreen.storyboard in Resources */,
 				0D5961EF2288CF6D0001FE3F /* amsterdam-colors.jpg in Resources */,
+				0D596201228BC8BA0001FE3F /* maps.jpg in Resources */,
+				0D596205228BC8D20001FE3F /* 2plane2travel.jpg in Resources */,
+				0D596207228BC8DA0001FE3F /* travell.jpg in Resources */,
 				0D5961FB228946310001FE3F /* airplaneDing.mp3 in Resources */,
 				0D5961F922893CF70001FE3F /* addTripSound.mp3 in Resources */,
+				0D596203228BC8C50001FE3F /* 8-Amazing-Travel-Hacks.jpg in Resources */,
 				0D1F16BB2287FD4700B36086 /* Assets.xcassets in Resources */,
 				0D1F16B62287FD4300B36086 /* Main.storyboard in Resources */,
 				0D5961ED2288CF690001FE3F /* Abraham-Lake.jpg in Resources */,
+				0D59620F228BCB580001FE3F /* planess.jpg in Resources */,
 				0D5961F12288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg in Resources */,
+				0D596211228BCB5E0001FE3F /* imagess.jpg in Resources */,
+				0D59620B228BCB410001FE3F /* planel.jpg in Resources */,
 				0D5961FD2289463E0001FE3F /* openMap.mp3 in Resources */,
 				0D5961E92288CAEF0001FE3F /* sendMeOnMyWay.mp3 in Resources */,
 				0D5961EB2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg in Resources */,
+				0D59620D228BCB4E0001FE3F /* planessss.jpg in Resources */,
 				0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +353,7 @@
 				0D1F16E42288066200B36086 /* Trip.swift in Sources */,
 				0D1F16B92287FD4300B36086 /* OnTheRoadAgain.xcdatamodeld in Sources */,
 				0D1F16B12287FD4300B36086 /* AppDelegate.swift in Sources */,
+				0D596213228BCD260001FE3F /* WaypointTableViewController.swift in Sources */,
 				0D5961FF228BB4F80001FE3F /* Waypoint.swift in Sources */,
 				0D1F16E2228803F000B36086 /* TripTableViewController.swift in Sources */,
 				0D1F16E8228825B100B36086 /* WayPointsViewController.swift in Sources */,

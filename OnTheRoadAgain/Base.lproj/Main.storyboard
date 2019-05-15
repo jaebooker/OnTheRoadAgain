@@ -27,7 +27,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cable-beach-broome-australia" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-iQ-gPN">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cable-beach-broome-australia" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-iQ-gPN">
                                             <rect key="frame" x="0.0" y="-1" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -55,11 +55,46 @@
                     </navigationItem>
                     <connections>
                         <segue destination="VF7-h7-QZs" kind="show" identifier="ViewTripSegue" id="TSV-Cr-02y"/>
+                        <segue destination="azB-Fy-DFS" kind="show" identifier="ViewTripWaypointsSegue" id="UIk-GF-a0p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-AX-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="142"/>
+        </scene>
+        <!--Waypoint Table View Controller-->
+        <scene sceneID="O0J-Kh-A6l">
+            <objects>
+                <tableViewController id="azB-Fy-DFS" customClass="WaypointTableViewController" customModule="OnTheRoadAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oKX-4k-aZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R4r-nw-8Ct">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R4r-nw-8Ct" id="ZkL-Oc-VXR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="travell" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-CB-DBS">
+                                            <rect key="frame" x="0.0" y="-1" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="azB-Fy-DFS" id="Es6-An-93f"/>
+                            <outlet property="delegate" destination="azB-Fy-DFS" id="hUn-Jd-tvF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nK8-sX-MkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="873"/>
         </scene>
         <!--Way Points View Controller-->
         <scene sceneID="3si-oD-nes">
@@ -271,5 +306,6 @@
         <image name="Abraham-Lake" width="1920" height="900"/>
         <image name="amsterdam-colors" width="868" height="579"/>
         <image name="cable-beach-broome-australia" width="868" height="579"/>
+        <image name="travell" width="585" height="390"/>
     </resources>
 </document>
