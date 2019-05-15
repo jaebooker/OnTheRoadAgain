@@ -52,7 +52,17 @@ class WaypointTableViewController: UITableViewController {
             }
         }
     }
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let waypointy = waypointArray[indexPath.row]
+        performSegue(withIdentifier: "viewWaypointSegue", sender: waypointy)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let waypointMapVC = segue.destination as? WaypointMapViewController {
+            if let waypointSelected = sender as? WaypointItem {
+                waypointMapVC.selectedWaypoint = waypointSelected
+            }
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

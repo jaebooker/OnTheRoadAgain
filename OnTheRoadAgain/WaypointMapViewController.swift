@@ -16,6 +16,17 @@ class WaypointMapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        if (selectedWaypoint?.lat != nil) && (selectedWaypoint?.long != nil) && (selectedWaypoint?.title != nil) {
+            let annotation = MKPointAnnotation()
+            annotation.title = selectedWaypoint?.title
+            annotation.coordinate = CLLocationCoordinate2DMake(selectedWaypoint!.lat, selectedWaypoint!.long)
+            self.mapView.addAnnotation(annotation) //add annotation to mapview
+            let span = MKCoordinateSpan(latitudeDelta: 0.1,longitudeDelta: 0.1) //span of zoom
+            let region = MKCoordinateRegion(center: annotation.coordinate,span: span) //region for zoom
+            self.mapView.setRegion(region, animated: true) //set zoom in
+        }
+    }
     
 
     /*

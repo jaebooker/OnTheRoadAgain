@@ -31,9 +31,9 @@ class TripTableViewController: UITableViewController {
         getTripData()
     }
     func testTripCreation() -> [Trip] {
-        var cocomo = Trip()
+        let cocomo = Trip()
         cocomo.name = "Brumuda, Jamaca"
-        var floridaKeys = Trip()
+        let floridaKeys = Trip()
         floridaKeys.name = "Oooh, I wanna take ya!"
         return [cocomo, floridaKeys]
     }
@@ -59,17 +59,17 @@ class TripTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        var trips = tripArray[indexPath.row]
+        let trips = tripArray[indexPath.row]
         cell.textLabel?.text = trips.name
-        var white = UIColor(displayP3Red: 999, green: 999, blue: 999, alpha: 1)
-        var blue = UIColor(displayP3Red: 1, green: 1, blue: 999, alpha: 1)
+        let white = UIColor(displayP3Red: 999, green: 999, blue: 999, alpha: 1)
+        let blue = UIColor(displayP3Red: 1, green: 1, blue: 999, alpha: 1)
         cell.textLabel?.textColor = white
         cell.textLabel?.highlightedTextColor = blue
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var trips = tripArray[indexPath.row]
+        let trips = tripArray[indexPath.row]
         performSegue(withIdentifier: "ViewTripSegue", sender: trips)
     }
     
