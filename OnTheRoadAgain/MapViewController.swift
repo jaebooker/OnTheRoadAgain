@@ -8,14 +8,30 @@
 
 import UIKit
 import MapKit
+import AVFoundation
 class MapViewController: UIViewController, UISearchBarDelegate {
-
+    
+    var wayPoint: Waypoint? = nil
+    
+    @IBOutlet weak var addWaypointLabel: UIButton!
+    
+    @IBAction func addWaypointButton(_ sender: Any) {
+    }
+    
     @IBOutlet weak var mapView: MKMapView!
+    var mapPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         present(searchController, animated: true, completion: nil)
+        let mapSound = Bundle.main.path(forResource: "openMap", ofType: "mp3")
+        do {
+            mapPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: mapSound!))
+            mapPlayer.play()
+        } catch {
+            print(error)
+        }
         // Do any additional setup after loading the view.
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -52,6 +68,14 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 let span = MKCoordinateSpan(latitudeDelta: 0.1,longitudeDelta: 0.1) //span of zoom
                 let region = MKCoordinateRegion(center: coordinate,span: span) //region for zoom
                 self.mapView.setRegion(region, animated: true) //set zoom in
+                if (latitude != nil) && (longitude != nil) && (annotation.title != nil) {
+                    self.wayPoint?.lat = latitude!
+                    self.wayPoint?.long = longitude!
+                    self.wayPoint?.title = annotation.title!
+                    print("success!")
+                }
+                print(self.wayPoint?.lat)
+                self.addWaypointLabel.isHidden = false //make button visible
             }
         }
     }

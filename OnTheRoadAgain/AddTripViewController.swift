@@ -11,6 +11,7 @@ import AVFoundation
 class AddTripViewController: UIViewController {
     var tripController = TripTableViewController()
     var addTripPlayer = AVAudioPlayer()
+    var tripAddedPlayer = AVAudioPlayer()
     @IBOutlet weak var tripTextField: UITextField!
     @IBAction func addTripButton(_ sender: Any) {
 //        let trip = Trip()
@@ -26,14 +27,17 @@ class AddTripViewController: UIViewController {
                 newTrip.name = tripTextField.text!
             }
             try? context.save()
+            tripAddedPlayer.play()
             navigationController?.popViewController(animated: true)
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         let addTripSound = Bundle.main.path(forResource: "addTripSound", ofType: "mp3")
+        let tripAddedSound = Bundle.main.path(forResource: "airplaneDing", ofType: "mp3")
         do {
             addTripPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: addTripSound!))
+            tripAddedPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: tripAddedSound!))
             addTripPlayer.play()
         } catch {
             print(error)

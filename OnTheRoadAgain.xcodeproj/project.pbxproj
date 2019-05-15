@@ -26,6 +26,9 @@
 		0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */; };
 		0D5961F522890DA80001FE3F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5961F422890DA80001FE3F /* MapViewController.swift */; };
 		0D5961F922893CF70001FE3F /* addTripSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961F822893CF70001FE3F /* addTripSound.mp3 */; };
+		0D5961FB228946310001FE3F /* airplaneDing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961FA228946310001FE3F /* airplaneDing.mp3 */; };
+		0D5961FD2289463E0001FE3F /* openMap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5961FC2289463E0001FE3F /* openMap.mp3 */; };
+		0D5961FF228BB4F80001FE3F /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5961FE228BB4F80001FE3F /* Waypoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		0D5961F22288CF750001FE3F /* cable-beach-broome-australia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cable-beach-broome-australia.jpg"; sourceTree = SOURCE_ROOT; };
 		0D5961F422890DA80001FE3F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0D5961F822893CF70001FE3F /* addTripSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = addTripSound.mp3; sourceTree = "<group>"; };
+		0D5961FA228946310001FE3F /* airplaneDing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airplaneDing.mp3; sourceTree = SOURCE_ROOT; };
+		0D5961FC2289463E0001FE3F /* openMap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openMap.mp3; sourceTree = SOURCE_ROOT; };
+		0D5961FE228BB4F80001FE3F /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 		0D1F16AF2287FD4300B36086 /* OnTheRoadAgain */ = {
 			isa = PBXGroup;
 			children = (
+				0D5961FA228946310001FE3F /* airplaneDing.mp3 */,
+				0D5961FC2289463E0001FE3F /* openMap.mp3 */,
 				0D5961F822893CF70001FE3F /* addTripSound.mp3 */,
 				0D5961EE2288CF6D0001FE3F /* amsterdam-colors.jpg */,
 				0D5961EC2288CF690001FE3F /* Abraham-Lake.jpg */,
@@ -139,6 +147,7 @@
 				0D1F16E522881A3200B36086 /* AddTripViewController.swift */,
 				0D1F16E7228825B100B36086 /* WayPointsViewController.swift */,
 				0D5961F422890DA80001FE3F /* MapViewController.swift */,
+				0D5961FE228BB4F80001FE3F /* Waypoint.swift */,
 			);
 			path = OnTheRoadAgain;
 			sourceTree = "<group>";
@@ -267,11 +276,13 @@
 			files = (
 				0D1F16BE2287FD4700B36086 /* LaunchScreen.storyboard in Resources */,
 				0D5961EF2288CF6D0001FE3F /* amsterdam-colors.jpg in Resources */,
+				0D5961FB228946310001FE3F /* airplaneDing.mp3 in Resources */,
 				0D5961F922893CF70001FE3F /* addTripSound.mp3 in Resources */,
 				0D1F16BB2287FD4700B36086 /* Assets.xcassets in Resources */,
 				0D1F16B62287FD4300B36086 /* Main.storyboard in Resources */,
 				0D5961ED2288CF690001FE3F /* Abraham-Lake.jpg in Resources */,
 				0D5961F12288CF710001FE3F /* best-travel-instagrams-to-follow-2016-max-muench-6.jpg in Resources */,
+				0D5961FD2289463E0001FE3F /* openMap.mp3 in Resources */,
 				0D5961E92288CAEF0001FE3F /* sendMeOnMyWay.mp3 in Resources */,
 				0D5961EB2288CF640001FE3F /* 8-Amazing-Travel-Hacks.jpg in Resources */,
 				0D5961F32288CF750001FE3F /* cable-beach-broome-australia.jpg in Resources */,
@@ -303,6 +314,7 @@
 				0D1F16E42288066200B36086 /* Trip.swift in Sources */,
 				0D1F16B92287FD4300B36086 /* OnTheRoadAgain.xcdatamodeld in Sources */,
 				0D1F16B12287FD4300B36086 /* AppDelegate.swift in Sources */,
+				0D5961FF228BB4F80001FE3F /* Waypoint.swift in Sources */,
 				0D1F16E2228803F000B36086 /* TripTableViewController.swift in Sources */,
 				0D1F16E8228825B100B36086 /* WayPointsViewController.swift in Sources */,
 				0D5961F522890DA80001FE3F /* MapViewController.swift in Sources */,

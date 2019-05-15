@@ -143,17 +143,34 @@
                                     <outlet property="delegate" destination="JmE-rY-f6Y" id="mjX-NA-2Tc"/>
                                 </connections>
                             </mapView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2X-8h-eBD">
+                                <rect key="frame" x="40" y="288" width="334" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Add Waypoint!">
+                                    <color key="titleColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="addWaypointButton:" destination="JmE-rY-f6Y" eventType="touchUpInside" id="B8p-mt-Y89"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Q2X-8h-eBD" firstAttribute="leading" secondItem="gsO-2j-YsI" secondAttribute="leading" constant="40" id="2hH-hR-VSh"/>
+                            <constraint firstItem="gsO-2j-YsI" firstAttribute="trailing" secondItem="Q2X-8h-eBD" secondAttribute="trailing" constant="40" id="3ny-Nf-Oox"/>
                             <constraint firstItem="V3Z-vH-IZZ" firstAttribute="trailing" secondItem="gsO-2j-YsI" secondAttribute="trailing" id="7AZ-dm-h2X"/>
                             <constraint firstItem="V3Z-vH-IZZ" firstAttribute="top" secondItem="gsO-2j-YsI" secondAttribute="top" id="ILz-pY-rRV"/>
                             <constraint firstItem="V3Z-vH-IZZ" firstAttribute="leading" secondItem="gsO-2j-YsI" secondAttribute="leading" id="TPe-nG-byB"/>
                             <constraint firstAttribute="bottom" secondItem="V3Z-vH-IZZ" secondAttribute="bottom" id="YdV-Ye-6mG"/>
+                            <constraint firstItem="Q2X-8h-eBD" firstAttribute="top" secondItem="gsO-2j-YsI" secondAttribute="top" constant="200" id="eRd-Jl-4hd"/>
+                            <constraint firstItem="Q2X-8h-eBD" firstAttribute="centerX" secondItem="Xzz-mJ-Z8i" secondAttribute="centerX" id="rbI-xY-Etx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gsO-2j-YsI"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addWaypointLabel" destination="Q2X-8h-eBD" id="OKx-XL-V6V"/>
                         <outlet property="mapView" destination="V3Z-vH-IZZ" id="IJB-yy-uRh"/>
                         <outlet property="searchDisplayController" destination="dRx-Rx-z4o" id="03G-cC-XcQ"/>
                     </connections>
