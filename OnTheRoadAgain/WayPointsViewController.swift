@@ -40,7 +40,13 @@ class WayPointsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let mapVC = segue.destination as? MapViewController {
+            if selectedTrip != nil {
+                mapVC.selectedTrip = selectedTrip
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

@@ -12,10 +12,25 @@ import AVFoundation
 class MapViewController: UIViewController, UISearchBarDelegate {
     
     var wayPoint: Waypoint = Waypoint()
-    
+    var selectedTrip: TripItem? = nil
     @IBOutlet weak var addWaypointLabel: UIButton!
     
     @IBAction func addWaypointButton(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let foundTrip = selectedTrip {
+                let newWaypoint = WaypointItem(entity: WaypointItem.entity(), insertInto: context)
+                if foundTrip.name != nil {
+                    newWaypoint.name = foundTrip.name
+                }
+                newWaypoint.lat = wayPoint.lat
+                newWaypoint.long = wayPoint.long
+                newWaypoint.title = wayPoint.title
+                try? context.save()
+                print(newWaypoint.title!)
+                print(newWaypoint.name!)
+            }
+        }
+        self.addWaypointLabel.isHidden = true //make button invisible
     }
     
     @IBOutlet weak var mapView: MKMapView!
@@ -72,8 +87,8 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                     self.wayPoint.lat = latitude!
                     self.wayPoint.long = longitude!
                     self.wayPoint.title = annotation.title!
+                    self.addWaypointLabel.isHidden = false //make button visible
                 }
-                self.addWaypointLabel.isHidden = false //make button visible
             }
         }
     }
