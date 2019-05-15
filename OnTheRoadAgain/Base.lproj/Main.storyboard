@@ -55,7 +55,6 @@
                     </navigationItem>
                     <connections>
                         <segue destination="VF7-h7-QZs" kind="show" identifier="ViewTripSegue" id="TSV-Cr-02y"/>
-                        <segue destination="azB-Fy-DFS" kind="show" identifier="ViewTripWaypointsSegue" id="UIk-GF-a0p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-AX-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R4r-nw-8Ct">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="waypointCell" id="R4r-nw-8Ct">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R4r-nw-8Ct" id="ZkL-Oc-VXR">
@@ -134,19 +133,34 @@
                                     <action selector="removeTripButton:" destination="VF7-h7-QZs" eventType="touchUpInside" id="PWP-v9-lCd"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrK-Yr-7h6">
+                                <rect key="frame" x="40" y="497.5" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <color key="tintColor" red="0.21764194485937335" green="0.85213198676253488" blue="0.85566802890167626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="View Your Waypoints">
+                                    <color key="titleColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="azB-Fy-DFS" kind="show" id="bIP-DS-xdN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81336212158203125" green="0.79532438516616821" blue="0.79089647531509399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PrK-Yr-7h6" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="2e9-IU-SRq"/>
                             <constraint firstItem="oGz-Ie-t0b" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="3br-v7-ypr"/>
                             <constraint firstItem="nGS-ca-qm4" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" id="5Qr-59-JTb"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="FhJ-uJ-iEW" secondAttribute="trailing" constant="20" id="8c8-cG-dmr"/>
+                            <constraint firstItem="PrK-Yr-7h6" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="EE9-xa-2xh"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="bottom" secondItem="oGz-Ie-t0b" secondAttribute="bottom" constant="60" id="EjJ-O7-ge1"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="top" secondItem="FhJ-uJ-iEW" secondAttribute="bottom" constant="151" id="FJb-E1-9Dc"/>
                             <constraint firstItem="nGS-ca-qm4" firstAttribute="top" secondItem="juW-V1-DYU" secondAttribute="top" id="GBw-ho-GmC"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="GNy-K3-B4N"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="20" id="Mpb-bh-Gns"/>
+                            <constraint firstItem="PrK-Yr-7h6" firstAttribute="top" secondItem="x5Q-sp-kS1" secondAttribute="bottom" constant="138" id="QJD-lG-XyX"/>
                             <constraint firstItem="x5Q-sp-kS1" firstAttribute="leading" secondItem="juW-V1-DYU" secondAttribute="leading" constant="40" id="U4r-oj-bDA"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="x5Q-sp-kS1" secondAttribute="trailing" constant="40" id="Uv6-KL-iAo"/>
+                            <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="PrK-Yr-7h6" secondAttribute="trailing" constant="40" id="WB1-hj-F8z"/>
                             <constraint firstItem="oGz-Ie-t0b" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="b5j-t2-Inp"/>
                             <constraint firstItem="FhJ-uJ-iEW" firstAttribute="centerX" secondItem="8Ie-mo-ZFA" secondAttribute="centerX" id="lTG-eg-9we"/>
                             <constraint firstItem="juW-V1-DYU" firstAttribute="trailing" secondItem="oGz-Ie-t0b" secondAttribute="trailing" constant="40" id="lp7-Ah-hdk"/>
@@ -157,6 +171,8 @@
                         <viewLayoutGuide key="safeArea" id="juW-V1-DYU"/>
                     </view>
                     <connections>
+                        <outlet property="addWaypointButtonLabel" destination="x5Q-sp-kS1" id="OUw-H4-mDw"/>
+                        <outlet property="viewWaypointsButtonLabel" destination="PrK-Yr-7h6" id="hR9-xC-mOf"/>
                         <outlet property="wayPointLabel" destination="FhJ-uJ-iEW" id="7Qi-gU-Gu9"/>
                     </connections>
                 </viewController>

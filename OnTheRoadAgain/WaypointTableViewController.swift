@@ -9,38 +9,45 @@
 import UIKit
 
 class WaypointTableViewController: UITableViewController {
-
+    
+    var selectedTrip: TripItem? = nil
+    var waypointArray: [WaypointItem] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        getWaypointData()
+    }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return waypointArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "waypointCell", for: indexPath)
+        var waypoints = waypointArray[indexPath.row]
+        cell.textLabel?.text = waypoints.title
         return cell
     }
-    */
+    func getWaypointData(){
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let waypointItems = try? context.fetch(WaypointItem.fetchRequest()) as? [WaypointItem] {
+                waypointArray = waypointItems
+                tableView.reloadData()
+            }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

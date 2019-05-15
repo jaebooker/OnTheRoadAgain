@@ -14,6 +14,9 @@ class WayPointsViewController: UIViewController {
     @IBOutlet weak var wayPointLabel: UILabel!
     @IBAction func wayPointButton(_ sender: Any) {
     }
+    @IBOutlet weak var addWaypointButtonLabel: UIButton!
+    
+    @IBOutlet weak var viewWaypointsButtonLabel: UIButton!
     @IBAction func removeTripButton(_ sender: Any) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             if let removedTrip = selectedTrip {
@@ -44,6 +47,13 @@ class WayPointsViewController: UIViewController {
         if let mapVC = segue.destination as? MapViewController {
             if selectedTrip != nil {
                 mapVC.selectedTrip = selectedTrip
+                mapVC.waypointVC = self
+            }
+        }
+        if let waypointsTVC = segue.destination as? WaypointTableViewController {
+            
+            if selectedTrip != nil {
+                waypointsTVC.selectedTrip = selectedTrip
             }
         }
     }

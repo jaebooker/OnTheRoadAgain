@@ -12,6 +12,7 @@ import AVFoundation
 class MapViewController: UIViewController, UISearchBarDelegate {
     
     var wayPoint: Waypoint = Waypoint()
+    var waypointVC = WayPointsViewController()
     var selectedTrip: TripItem? = nil
     @IBOutlet weak var addWaypointLabel: UIButton!
     
@@ -26,11 +27,11 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 newWaypoint.long = wayPoint.long
                 newWaypoint.title = wayPoint.title
                 try? context.save()
-                print(newWaypoint.title!)
-                print(newWaypoint.name!)
+                self.addWaypointLabel.isHidden = true //make button invisible
+                waypointVC.viewWaypointsButtonLabel.isHidden = false //reveal view button
+                waypointVC.addWaypointButtonLabel.setTitle("Add More Waypoints!", for: .normal)
             }
         }
-        self.addWaypointLabel.isHidden = true //make button invisible
     }
     
     @IBOutlet weak var mapView: MKMapView!
