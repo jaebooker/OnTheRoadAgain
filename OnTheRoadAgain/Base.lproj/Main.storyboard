@@ -61,6 +61,35 @@
             </objects>
             <point key="canvasLocation" x="381" y="142"/>
         </scene>
+        <!--Waypoint Map View Controller-->
+        <scene sceneID="fr1-Ae-C8s">
+            <objects>
+                <viewController id="eiK-ey-Q6G" customClass="WaypointMapViewController" customModule="OnTheRoadAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m7m-S8-oPg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="63F-AV-0Ag">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="63F-AV-0Ag" secondAttribute="bottom" id="6fM-FL-lOJ"/>
+                            <constraint firstItem="63F-AV-0Ag" firstAttribute="trailing" secondItem="AXc-yE-uXh" secondAttribute="trailing" id="9am-Iy-jed"/>
+                            <constraint firstItem="63F-AV-0Ag" firstAttribute="top" secondItem="m7m-S8-oPg" secondAttribute="top" id="sHE-k2-GG4"/>
+                            <constraint firstItem="63F-AV-0Ag" firstAttribute="leading" secondItem="AXc-yE-uXh" secondAttribute="leading" id="wnA-Vj-Bif"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AXc-yE-uXh"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="63F-AV-0Ag" id="Jcj-Q0-Fjd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kvv-WR-4VQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1320.289855072464" y="871.875"/>
+        </scene>
         <!--Waypoint Table View Controller-->
         <scene sceneID="O0J-Kh-A6l">
             <objects>
@@ -90,6 +119,9 @@
                             <outlet property="delegate" destination="azB-Fy-DFS" id="hUn-Jd-tvF"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="eiK-ey-Q6G" kind="show" identifier="viewWaypointSegue" id="u7c-rX-F9J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nK8-sX-MkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

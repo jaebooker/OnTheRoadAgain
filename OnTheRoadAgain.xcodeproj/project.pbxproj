@@ -39,6 +39,7 @@
 		0D59620F228BCB580001FE3F /* planess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D59620E228BCB580001FE3F /* planess.jpg */; };
 		0D596211228BCB5E0001FE3F /* imagess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D596210228BCB5E0001FE3F /* imagess.jpg */; };
 		0D596213228BCD260001FE3F /* WaypointTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D596212228BCD260001FE3F /* WaypointTableViewController.swift */; };
+		0D596215228BE1160001FE3F /* WaypointMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D596214228BE1160001FE3F /* WaypointMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		0D59620E228BCB580001FE3F /* planess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planess.jpg; sourceTree = SOURCE_ROOT; };
 		0D596210228BCB5E0001FE3F /* imagess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imagess.jpg; sourceTree = SOURCE_ROOT; };
 		0D596212228BCD260001FE3F /* WaypointTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointTableViewController.swift; sourceTree = "<group>"; };
+		0D596214228BE1160001FE3F /* WaypointMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				0D5961F422890DA80001FE3F /* MapViewController.swift */,
 				0D5961FE228BB4F80001FE3F /* Waypoint.swift */,
 				0D596212228BCD260001FE3F /* WaypointTableViewController.swift */,
+				0D596214228BE1160001FE3F /* WaypointMapViewController.swift */,
 			);
 			path = OnTheRoadAgain;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				0D1F16E622881A3200B36086 /* AddTripViewController.swift in Sources */,
 				0D1F16E42288066200B36086 /* Trip.swift in Sources */,
+				0D596215228BE1160001FE3F /* WaypointMapViewController.swift in Sources */,
 				0D1F16B92287FD4300B36086 /* OnTheRoadAgain.xcdatamodeld in Sources */,
 				0D1F16B12287FD4300B36086 /* AppDelegate.swift in Sources */,
 				0D596213228BCD260001FE3F /* WaypointTableViewController.swift in Sources */,
