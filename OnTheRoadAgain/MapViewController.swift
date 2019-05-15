@@ -30,6 +30,7 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 self.addWaypointLabel.isHidden = true //make button invisible
                 waypointVC.viewWaypointsButtonLabel.isHidden = false //reveal view button
                 waypointVC.addWaypointButtonLabel.setTitle("Add More Waypoints!", for: .normal)
+                navigationController?.popViewController(animated: true) //go back
             }
         }
     }

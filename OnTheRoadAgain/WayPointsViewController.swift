@@ -42,7 +42,9 @@ class WayPointsViewController: UIViewController {
         wayPointLabel.text = selectedTrip?.name
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        getWaypointData()
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let mapVC = segue.destination as? MapViewController {
             if selectedTrip != nil {
@@ -54,6 +56,18 @@ class WayPointsViewController: UIViewController {
             
             if selectedTrip != nil {
                 waypointsTVC.selectedTrip = selectedTrip
+            }
+        }
+    }
+    func getWaypointData(){
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let waypointItems = try? context.fetch(WaypointItem.fetchRequest()) as? [WaypointItem] {
+                for i in waypointItems {
+                    if i.name == selectedTrip?.name {
+                        viewWaypointsButtonLabel.isHidden = false //reveal view button
+                        addWaypointButtonLabel.setTitle("Add More Waypoints!", for: .normal)
+                    }
+                }
             }
         }
     }
